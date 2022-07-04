@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     1/07/2022 10:17:54 p. m.                     */
+/* Created on:     4/07/2022 3:46:06 p. m.                      */
 /*==============================================================*/
 
 
@@ -35,6 +35,7 @@ create table TBLSUCURSAL
       constraint CKC_UBICACIONSUCURSAL_TBLSUCUR check (UBICACIONSUCURSAL in ('norte','sur','centro')),
    NUMEMPLEADOSSUCURSAL NUMBER(7,0)          not null,
    FECHAFUNDACIONSUCURSAL DATE                 not null,
+   NOMBRESUCURSAL       VARCHAR2(100)        not null,
    constraint PK_TBLSUCURSAL primary key (CODSUCURSAL)
 );
 
