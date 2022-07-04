@@ -6,10 +6,10 @@ end;
 
 create or replace procedure prcIngresarSucursal(prmCod  Number, prmNit Number, 
                                                 prmUbicSucursal VARCHAR2, prmNoEmp Number,
-                                                prmFechaFundacion date)
+                                                prmFechaFundacion date,prmNombreSucursal VARCHAR2)
 as
 begin
     insert into tblsucursal values(prmCod, prmNit , 
                                    prmUbicSucursal , prmNoEmp ,
-                                   prmFechaFundacion);
+                                   prmFechaFundacion, prmNombreSucursal);
 end;
